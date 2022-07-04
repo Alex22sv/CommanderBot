@@ -19,20 +19,20 @@ module.exports = {
             let name = interaction.options.getString('server');
             let serverLists = await exarotonClient.getServers();
             let server = serverLists.find(server => server.name === name || server.id === name || server.address === name);
-            await server.executeCommand('say [CommanderBot] This server will be stopped in a few seconds.');
             const serverWillBeStoppedEmbed = new MessageEmbed()
                 .setDescription(`The server **${server.name}** will be stopped in 10 seconds.`)
                 .setColor(embedColor)
                 .setFooter({text:interaction.user.tag, iconURL:interaction.user.displayAvatarURL()})
             interaction.reply({ embeds:[serverWillBeStoppedEmbed], ephemeral:false});
-            // setTimeout(function(){
-            //     server.stop();
-            //     stoppingServerEmbed = new MessageEmbed()
-            //         .setDescription(`${loadingEmoji} Stopping server **${server.name}**`)
-            //         .setColor(embedColor)
-            //         .setFooter({text:interaction.user.tag, iconURL:interaction.user.displayAvatarURL()})
-            //     interaction.editReply({embeds:[stoppingServerEmbed]})
-            // },10000)
+            await server.executeCommand('say [CommanderBot] This server will be stopped in a few seconds.');
+            setTimeout(function(){
+                server.stop();
+                stoppingServerEmbed = new MessageEmbed()
+                    .setDescription(`${loadingEmoji} Stopping server **${server.name}**`)
+                    .setColor(embedColor)
+                    .setFooter({text:interaction.user.tag, iconURL:interaction.user.displayAvatarURL()})
+                interaction.editReply({embeds:[stoppingServerEmbed]})
+            },10000)
         } catch(e) {
             console.error(`An error ocurred while running the command 'stop' executed by ${interaction.user.tag}(${interaction.user.id}): ${e}`)
             if(e.message == "Server is not online"){
@@ -42,7 +42,7 @@ module.exports = {
                     .setColor(errorColor)
                     .setTimestamp()
                     .setFooter({text:interaction.user.tag, iconURL:interaction.user.displayAvatarURL()})
-                return interaction.reply({embeds:[serverNotOnlineEmbed], ephemeral:true});
+                return interaction.editReply({embeds:[serverNotOnlineEmbed]});
             } 
             if(e.message == "Cannot read properties of undefined (reading 'executeCommand')"){
                 const serverNotFoundEmbed = new MessageEmbed()
@@ -51,7 +51,7 @@ module.exports = {
                     .setColor(errorColor)
                     .setTimestamp()
                     .setFooter({text:interaction.user.tag, iconURL:interaction.user.displayAvatarURL()})
-                return interaction.reply({embeds:[serverNotFoundEmbed], ephemeral:true});
+                return interaction.editReply({embeds:[serverNotFoundEmbed]});
             } else {
                 const errorEmbed = new MessageEmbed()
                     .setTitle('Error!')
@@ -59,7 +59,7 @@ module.exports = {
                     .setColor(errorColor)
                     .setTimestamp()
                     .setFooter({text:interaction.user.tag, iconURL:interaction.user.displayAvatarURL()})
-                return interaction.reply({embeds:[errorEmbed], ephemeral:true});
+                return interaction.editReply({embeds:[errorEmbed]});
                 
             }
         }

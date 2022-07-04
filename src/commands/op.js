@@ -7,8 +7,8 @@ const { MessageEmbed } = require('discord.js');
 
 module.exports = {
     data: new SlashCommandBuilder()
-        .setName('pardon')
-        .setDescription(commandDescriptions.pardon)
+        .setName('op')
+        .setDescription(commandDescriptions.op)
         .addStringOption(option => 
             option.setName('server')
                 .setDescription('Send the server name, ID or address here.')
@@ -24,16 +24,16 @@ module.exports = {
             let serverLists = await exarotonClient.getServers();
             let server = serverLists.find(server => server.name === name || server.id === name || server.address === name);
             let username = interaction.options.getString('player');
-            let list = server.getPlayerList('banned-players');
-            await list.deleteEntry(username);
-            const playerPardonedEmbed = new MessageEmbed()
-                .setDescription(`Player **${username}** was unbanned in Minecraft server **${server.name}**.`)
+            let list = server.getPlayerList('ops');
+            await list.addEntry(username)
+            const playerBannedEmbed = new MessageEmbed()
+                .setDescription(`Player **${username}** is now operator in Minecraft server **${server.name}**.`)
                 .setColor(embedColor) 
                 .setTimestamp()
                 .setFooter({text:interaction.user.tag, iconURL:interaction.user.displayAvatarURL()})
-            return interaction.reply({embeds:[playerPardonedEmbed], ephemeral:true});
+            return interaction.reply({embeds:[playerBannedEmbed], ephemeral:true});
         } catch(e) {
-            console.error(`An error ocurred while running the command 'pardon' executed by ${interaction.user.tag}(${interaction.user.id}): ${e}`)
+            console.error(`An error ocurred while running the command 'op' executed by ${interaction.user.tag}(${interaction.user.id}): ${e}`)
             if(e.message == "Cannot read properties of undefined (reading 'getPlayerList')"){
                 const serverNotFoundEmbed = new MessageEmbed()
                     .setTitle('Error!')

@@ -25,17 +25,17 @@ module.exports = {
             let name = interaction.options.getString('server');
             let serverLists = await exarotonClient.getServers();
             let server = serverLists.find(server => server.name === name || server.id === name || server.address === name);
-            await server.executeCommand('say [CommanderBot] This server will be restarted in a few seconds.');
             const serverWillBeRestartedEmbed = new MessageEmbed()
                 .setDescription(`The server **${server.name}** will be restarted in 10 seconds.`)
                 .setColor(embedColor)
                 .setTimestamp()
                 .setFooter({text:interaction.user.tag, iconURL:interaction.user.displayAvatarURL()})
             interaction.reply({ embeds:[serverWillBeRestartedEmbed], ephemeral:false});
+            await server.executeCommand('say [CommanderBot] This server will be restarted in a few seconds.');
             setTimeout(function(){
                 server.restart();
                 restartingServerEmbed = new MessageEmbed()
-                    .setDescription(`${loadingEmoji} Restarted server **${server.name}**`)
+                    .setDescription(`${loadingEmoji} Restarting server **${server.name}**`)
                     .setColor(embedColor)
                     .setTimestamp()
                     .setFooter({text:interaction.user.tag, iconURL:interaction.user.displayAvatarURL()})
@@ -50,7 +50,7 @@ module.exports = {
                     .setColor(errorColor)
                     .setTimestamp()
                     .setFooter({text:interaction.user.tag, iconURL:interaction.user.displayAvatarURL()})
-                return interaction.reply({embeds:[serverNotOnlineEmbed], ephemeral:true});
+                return interaction.editReply({embeds:[serverNotOnlineEmbed]});
                 
             } 
             if(e.message == "Cannot read properties of undefined (reading 'executeCommand')"){
@@ -60,7 +60,7 @@ module.exports = {
                     .setColor(errorColor)
                     .setTimestamp()
                     .setFooter({text:interaction.user.tag, iconURL:interaction.user.displayAvatarURL()})
-                return interaction.reply({embeds:[serverNotFoundEmbed], ephemeral:true});
+                return interaction.editReply({embeds:[serverNotFoundEmbed]});
             } else {
                 const errorEmbed = new MessageEmbed()
                     .setTitle('Error!')
@@ -68,7 +68,7 @@ module.exports = {
                     .setColor(errorColor)   
                     .setTimestamp()
                     .setFooter({text:interaction.user.tag, iconURL:interaction.user.displayAvatarURL()})
-                return interaction.reply({embeds:[errorEmbed], ephemeral:true});
+                return interaction.editReply({embeds:[errorEmbed]});
                 
             }
         }

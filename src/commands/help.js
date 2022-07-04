@@ -14,21 +14,28 @@ module.exports = {
                 .setRequired(false)
                 .addChoices(
                     {name:'account', value:'account'},
+                    {name:'ban-ip', value:'banip'},
                     {name:'ban', value:'ban'},
                     {name:'botinfo', value:'botinfo'},
+                    {name:'deop', value:'deop'},
                     {name:'dynip', value:'dynip'},
                     {name:'execute', value:'execute'},
                     {name:'file', value:'file'},
                     {name:'help', value:'help'},
+                    {name:'list', value:'list'},
                     {name:'log', value:'log'},
                     {name:'motd', value:'motd'},
+                    {name:'op', value:'op'},
+                    {name:'pardon-ip', value:'pardonip'},
                     {name:'pardon', value:'pardon'},
                     {name:'ram', value:'ram'},
                     {name:'restart', value:'restart'},
                     {name:'servers', value:'servers'},
                     {name:'start', value:'start'},
                     {name:'status', value:'status'},
-                    {name:'stop', value:'stop'}
+                    {name:'stop', value:'stop'},
+                    {name:'unwhitelist', value:'unwhitelist'},
+                    {name:'whitelist', value:'whitelist'}
                 )
         ),
     async run(bot, interaction) {
