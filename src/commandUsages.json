@@ -1,0 +1,23 @@
+{
+    "account": "/account",
+    "ban": "/ban <server name|ID|address> <Minecraft player>",
+    "botinfo": "/botinfo",
+    "deop": "",
+    "dynip": "/dynip",
+    "execute": "/execute <server name|ID|address> <Minecraft command>",
+    "file": "/file <server name|ID|address> <file name>",
+    "help": "/help [<command>]",
+    "list": "",
+    "log": "/log <server name|ID|address>",
+    "motd": "/motd <server name|ID|address> [<new MOTD>]",
+    "op": "",
+    "pardon": "/pardon <server name|ID|address> <Minecraft player>",
+    "ram": "/ram <server name|ID|address> [<new RAM>]",
+    "restart": "/restart <server name|ID|address>.",
+    "servers": "/servers",
+    "start": "/start <server name|ID|address>",
+    "status": "/status <server name|ID|address>",
+    "stop": "/stop <server name|ID|address>",
+    "unwhitelist": "",
+    "whitelist": ""
+}

@@ -1,0 +1,23 @@
+{
+    "account": "Get information about your exaroton account.",
+    "ban": "Ban a Minecraft player on your server.",
+    "botinfo": "Get information about the bot.",
+    "deop": "",
+    "dynip": "Get the Dinamic IP (DynIP) of your server.",
+    "execute": "Execute a Minecraft command on your server.",
+    "file": "Get the content of text files on your server.",
+    "help": "Display the list of commands or get information about a single command.",
+    "list": "",
+    "log": "Upload the log of your server to https://mclo.gs/ and share the link.",
+    "motd": "Get or change your server MOTD.",
+    "op": "",
+    "pardon": "Remove the ban of a player on your server.",
+    "ram": "Get or change the RAM on your server.",
+    "restart": "Restart your Minecraft server. This command requires you to have the 'Server Manager' role.",
+    "servers": "Get the list of servers on your exaroton account.",
+    "start": "Start your Minecraft server. This command requires you to have the 'Server Manager' role.",
+    "status": "Create an embed to display the status of your server.",
+    "stop": "Stop your Minecraft server. This command requires you to have the 'Server Manager' role.",
+    "unwhitelist": "",
+    "whitelist": ""
+}

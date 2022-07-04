@@ -1,0 +1,25 @@
+{
+  "name": "commanderbot",
+  "version": "1.0.0",
+  "description": "Discord bot to manage your exaroton servers. New version of PhoenixAPI.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alex22-SV/CommanderBot.git"
+  },
+  "author": "Alex22-SV",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alex22-SV/CommanderBot/issues"
+  },
+  "homepage": "https://github.com/Alex22-SV/CommanderBot#readme",
+  "dependencies": {
+    "@discordjs/rest": "^0.4.1",
+    "discord-api-types": "^0.33.1",
+    "discord.js": "^13.8.1",
+    "exaroton": "^1.8.0"
+  }
+}
