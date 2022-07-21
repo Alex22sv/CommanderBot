@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Alex22-SV/CommanderBot.git"
+    "url": "git+https://github.com/Alex22sv/CommanderBot.git"
   },
-  "author": "Alex22-SV",
+  "author": "Alex22sv",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Alex22-SV/CommanderBot/issues"
+    "url": "https://github.com/Alex22sv/CommanderBot/issues"
   },
-  "homepage": "https://github.com/Alex22-SV/CommanderBot#readme",
+  "homepage": "https://github.com/Alex22sv/CommanderBot#readme",
   "dependencies": {
     "@discordjs/rest": "^0.4.1",
     "discord-api-types": "^0.33.1",
