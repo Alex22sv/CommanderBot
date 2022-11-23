@@ -1,0 +1,13 @@
+{
+	"clientId": "992325156569628732",
+	"discordToken": "OTkyMzI1MTU2NTY5NjI4NzMy.GHFm4T.HtIZesN9Atd9WJZN7Rbset5am0h34SXYSUSElg",
+    "exarotonAPIkey": "5bVh3735Eevp08EHzQyG4XMFDryatFdPHwPojgjOJx242eTvUhpAu2twJmzTDkD921xAfwN495AEVgpRCy4V0BFSP9sxEpGQHHyQ",
+	"botVersionURL": "https://github.com/Alex22-SV/CommanderBot/",
+	"botGitHubURL": "https://github.com/Alex22-SV/CommanderBot/",
+	"exarotonDocs": "https://developers.exaroton.com/",
+	"discord": "",
+	"serverManagerRoleId" : "",
+	"embedColor": "#19ba19",
+	"errorColor": "#f91c1c",
+	"loadingEmoji" : "<a:loading:882124504451653652>"
+}
