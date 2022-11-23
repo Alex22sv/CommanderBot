@@ -38,3 +38,6 @@ Once you have the bot on your server and added all the config to the `config.jso
 You'll see this message when the bot is online:
 ![image](https://user-images.githubusercontent.com/70553543/203649611-90e43061-8af3-49dc-af99-412406914933.png)
 And done! The bot is set up and online. You can now run `/help` to get the list of commands.
+
+## Support
+If you have questions about the bot or you want to report a bug you can join our Discord server [here](https://discord.com/invite/AAJPHqNXUy) or you can create an issue on GitHub [here](https://github.com/Alex22sv/CommanderBot/issues).
