@@ -3,7 +3,7 @@ const intents = new Discord.Intents();
 const bot = new Discord.Client({intents: 8});
 const { REST } = require('@discordjs/rest');
 const { Routes } = require('discord-api-types/v9');
-const { token, clientId } = require('./src/config.json');
+const { discordToken, clientId } = require('./src/config.json');
 const fs = require('fs');
 
 bot.on('ready', () => {
@@ -26,7 +26,7 @@ for (const file of commandFiles) {
 	commands.push(command.data.toJSON());
 	bot.slashcommands.set(command.data.name, command)
 }
-const rest = new REST({ version: '9' }).setToken(token);
+const rest = new REST({ version: '9' }).setToken(discordToken);
 (async () => {
 	try {
 		console.log('Started to reload slash commands.');
@@ -50,4 +50,4 @@ bot.on('interactionCreate', async(interaction) => {
 	}
 });
 
-bot.login(token);
+bot.login(discordToken);

@@ -16,10 +16,10 @@ module.exports = {
                 .setThumbnail(bot.user.displayAvatarURL())
                 .addFields(
                     {name:'Owner', value:'[Alex22#7756](https://alex22sv.tk)', inline:true},
-                    {name:'Developed since', value: '1/07/2022', inline:true},
+                    {name:'Developed since', value: '<t:1641535200:D>', inline:true},
                     {name:'Developed with', value:'JavaScript & exaroton API', inline:true},
                     {name:'Current version', value: `[v1.0.1](${botVersionURL})`, inline:true},
-                    {name:'Prefix', value:'Slash commands', inline:true},
+                    {name:'Prefix', value:'/', inline:true},
                     {name:'Links', value: `[GitHub](${botGitHubURL}) | [exaroton API documentation](${exarotonDocs})`, inline:false}
                 )
                 .setTimestamp()

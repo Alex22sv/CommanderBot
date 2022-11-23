@@ -1,10 +1,9 @@
 {
 	"clientId": "",
-	"guildId": "",
-	"token": "",
+	"discordToken": "",
     "exarotonAPIkey": "",
-	"botVersionURL": "https://github.com/Alex22-SV/CommanderBot/",
-	"botGitHubURL": "https://github.com/Alex22-SV/CommanderBot/",
+	"botVersionURL": "https://github.com/Alex22sv/CommanderBot/releases/tag/1.0.1",
+	"botGitHubURL": "https://github.com/Alex22sv/CommanderBot/",
 	"exarotonDocs": "https://developers.exaroton.com/",
 	"discord": "",
 	"serverManagerRoleId" : "",
