@@ -36,7 +36,9 @@ Yes. CommanderBot will only reply through slash commands, e.g. `/help`.
 ### Starting the bot
 Once you have the bot on your server and added all the config to the `config.json` file, you can start the bot running the command `node main.js`. Make sure the path is set to the `CommanderBot` folder.
 You'll see this message when the bot is online:
+
 ![image](https://user-images.githubusercontent.com/70553543/203649611-90e43061-8af3-49dc-af99-412406914933.png)
+
 And done! The bot is set up and online. You can now run `/help` to get the list of commands.
 
 ## Support
