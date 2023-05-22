@@ -1,6 +1,16 @@
 # CommanderBot
 ## What does it do?
 CommanderBot is an updated and improved version of [PhoenixAPI-Bot](https://github.com/Alex22sv/PhoenixAPI-Bot) which has the same commanods but the difference between both bots is that CommanderBot no longer uses message commands but slash commands.
+## Features
+- Get information about your exaroton account.
+- List all servers in your exaroton account.
+- Create an embed to automatically display the current status of your server.
+- Start, stop & restart your own servers.
+- Start servers that you have shared access to with your own credits.
+- Get your server log or upload it to https://mclo.gs/.
+- Update your server settings, like RAM, banned players & ips, whitelisted players, etc.
+- Execute Minecraft commands.
+- Get your server Dynamic IP (DynIP).
 ## Slash commands?
 Yes. CommanderBot will only reply through slash commands, e.g. `/help`.
 ![image](https://user-images.githubusercontent.com/70553543/203646292-dc042b32-d52e-43e4-a391-09e6c8a4f88c.png)
@@ -36,7 +46,9 @@ Yes. CommanderBot will only reply through slash commands, e.g. `/help`.
 ### Starting the bot
 Once you have the bot on your server and added all the config to the `config.json` file, you can start the bot running the command `node main.js`. Make sure the path is set to the `CommanderBot` folder.
 You'll see this message when the bot is online:
+
 ![image](https://user-images.githubusercontent.com/70553543/203649611-90e43061-8af3-49dc-af99-412406914933.png)
+
 And done! The bot is set up and online. You can now run `/help` to get the list of commands.
 
 ## Support

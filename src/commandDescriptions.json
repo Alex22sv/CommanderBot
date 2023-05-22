@@ -15,11 +15,11 @@
     "pardon": "Remove the ban of a player on your server.",
     "pardonip": "Remove the ban of an IP on your server.",
     "ram": "Get or change the RAM on your server.",
-    "restart": "Restart your Minecraft server. This command requires you to have the 'Server Manager' role.",
+    "restart": "Restart your Minecraft server.",
     "servers": "Get the list of servers on your exaroton account.",
-    "start": "Start your Minecraft server. This command requires you to have the 'Server Manager' role.",
+    "start": "Start your Minecraft server or one that you have shared access to.",
     "status": "Create an embed to display the status of your server.",
-    "stop": "Stop your Minecraft server. This command requires you to have the 'Server Manager' role.",
+    "stop": "Stop your Minecraft server.",
     "unwhitelist": "Remove Minecraft players from the whitelist/allowlist on your server.",
     "whitelist": "Add Minecraft players to the whitelist/allowlist on your server."
 }
