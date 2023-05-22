@@ -17,7 +17,7 @@
     "ram": "/ram <server name|ID|address> [<new RAM>]",
     "restart": "/restart <server name|ID|address>.",
     "servers": "/servers",
-    "start": "/start <server name|ID|address>",
+    "start": "/start <server name|ID|address> [<use own credits>]",
     "status": "/status <server name|ID|address>",
     "stop": "/stop <server name|ID|address>",
     "unwhitelist": "/unwhitelist <server name|ID|address> <Minecraft player>",
