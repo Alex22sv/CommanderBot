@@ -3,7 +3,7 @@
     "ban": "Ban a Minecraft player on your server.",
     "banip": "Ban the IP of a Minecraft player on your server.",
     "botinfo": "Get information about the bot.",
-    "changeram": "Change the RAM of your server.",
+    "changeram": "Change the amount of RAM assigned to your server.",
     "checkram": "Check the amount of RAM assigned to your server.",
     "deop": "'Remove operators rights from players on your server.",
     "dynip": "Get the Dinamic IP (DynIP) of your server.",
