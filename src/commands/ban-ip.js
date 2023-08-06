@@ -8,7 +8,7 @@ const { MessageEmbed } = require('discord.js');
 module.exports = {
     data: new SlashCommandBuilder()
         .setName('ban-ip')
-        .setDescription(commandDescriptions.banip)
+        .setDescription(commandDescriptions['ban-ip'])
         .addStringOption(option => 
             option.setName('server')
                 .setDescription('Send the server name, ID or address here.')

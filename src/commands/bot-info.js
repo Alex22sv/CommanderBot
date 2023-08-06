@@ -5,8 +5,8 @@ const { MessageEmbed } = require('discord.js');
 
 module.exports = {
     data: new SlashCommandBuilder()
-        .setName('botinfo')
-        .setDescription(commandDescriptions.botinfo),
+        .setName('bot-info')
+        .setDescription(commandDescriptions['bot-info']),
     async run(bot, interaction) {
         try{ 
             const infoEmbed = new MessageEmbed()
@@ -18,7 +18,7 @@ module.exports = {
                     {name:'Owner', value:'[Alex22#7756](https://alex22sv.tk)', inline:true},
                     {name:'Developed since', value: '<t:1641535200:D>', inline:true},
                     {name:'Developed with', value:'JavaScript & exaroton API', inline:true},
-                    {name:'Current version', value: `[v1.0.1](${botVersionURL})`, inline:true},
+                    {name:'Current version', value: `[v1.0.3](${botVersionURL})`, inline:true},
                     {name:'Prefix', value:'/', inline:true},
                     {name:'Links', value: `[GitHub](${botGitHubURL}) | [exaroton API documentation](${exarotonDocs})`, inline:false}
                 )

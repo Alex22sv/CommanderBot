@@ -14,11 +14,11 @@ module.exports = {
                 .setRequired(false)
                 .addChoices(
                     {name:'account', value:'account'},
-                    {name:'ban-ip', value:'banip'},
+                    {name:'ban-ip', value:'ban-ip'},
                     {name:'ban', value:'ban'},
-                    {name:'botinfo', value:'botinfo'},
-                    {name:'change-ram', value:'changeram'},
-                    {name:'check-ram', value:'checkram'},
+                    {name:'botinfo', value:'bot-info'},
+                    {name:'change-ram', value:'change-ram'},
+                    {name:'check-ram', value:'chec-kram'},
                     {name:'deop', value:'deop'},
                     {name:'dynip', value:'dynip'},
                     {name:'execute', value:'execute'},
