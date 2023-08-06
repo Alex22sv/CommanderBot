@@ -7,8 +7,8 @@ const { MessageEmbed } = require('discord.js');
 
 module.exports = {
     data: new SlashCommandBuilder()
-        .setName('motd')
-        .setDescription(commandDescriptions.motd)
+        .setName('set-motd')
+        .setDescription(commandDescriptions['set-motd'])
         .addStringOption(option => 
             option.setName('server')
                 .setDescription('Send the server name, ID or address here.')
@@ -46,7 +46,7 @@ module.exports = {
                 .setFooter({text:interaction.user.tag, iconURL:interaction.user.displayAvatarURL()})
             return interaction.reply({ embeds:[updatedMOTD], ephemeral:false});
         } catch(e) {
-            console.error(`An error ocurred while running the command 'motd' executed by ${interaction.user.tag}(${interaction.user.id}): ${e}`)
+            console.error(`An error ocurred while running the command 'set-motd' executed by ${interaction.user.tag}(${interaction.user.id}): ${e}`)
             if(e.message == "Cannot read properties of undefined (reading 'getMOTD')" || e.message == "Cannot read properties of undefined (reading 'setMOTD')"){
                 const serverNotFoundEmbed = new MessageEmbed()
                     .setTitle('Error!')
