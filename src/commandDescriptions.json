@@ -14,7 +14,7 @@
     "log": "Upload the log of your server to https://mclo.gs/ and share the link.",
     "op": "Grant a player operator rights on your server.",
     "pardon": "Remove the ban of a player on your server.",
-    "pardonip": "Remove the ban of an IP on your server.",
+    "pardon-ip": "Remove the ban of an IP on your server.",
     "restart": "Restart your Minecraft server.",
     "servers": "Get the list of servers on your exaroton account.",
     "set-motd": "Change your server MOTD. MOTD generator: https://motd.gg/",

@@ -14,7 +14,7 @@
     "log": "/log <server name|ID|address>",
     "op": "/op <server name|ID|address> <Minecraft player>",
     "pardon": "/pardon <server name|ID|address> <Minecraft player>",
-    "pardonip": "/pardon-ip <server name|ID|address> <IP>",
+    "pardon-ip": "/pardon-ip <server name|ID|address> <IP>",
     "restart": "/restart <server name|ID|address>.",
     "servers": "/servers",
     "set-ram": "/set-ram <server name|ID|address> <new RAM>",

@@ -27,7 +27,7 @@ module.exports = {
                     {name:'list', value:'list'},
                     {name:'log', value:'log'},
                     {name:'op', value:'op'},
-                    {name:'pardon-ip', value:'pardonip'},
+                    {name:'pardon-ip', value:'pardon-ip'},
                     {name:'pardon', value:'pardon'},
                     {name:'restart', value:'restart'},
                     {name:'servers', value:'servers'},
