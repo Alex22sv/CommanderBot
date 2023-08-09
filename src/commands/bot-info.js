@@ -15,7 +15,7 @@ module.exports = {
                 .setColor(embedColor)
                 .setThumbnail(bot.user.displayAvatarURL())
                 .addFields(
-                    {name:'Owner', value:'[Alex22#7756](https://alex22sv.tk)', inline:true},
+                    {name:'Developer', value:'[Alex22sv](https://alex22sv.me)', inline:true},
                     {name:'Developed since', value: '<t:1641535200:D>', inline:true},
                     {name:'Developed with', value:'JavaScript & exaroton API', inline:true},
                     {name:'Current version', value: `[v1.0.3](${botVersionURL})`, inline:true},

@@ -1,7 +1,7 @@
 {
   "name": "commanderbot",
-  "version": "1.0.1",
-  "description": "Discord bot to manage your exaroton servers. New version of PhoenixAPI.",
+  "version": "1.0.3",
+  "description": "Discord bot to manage your exaroton servers. Fork of PhoenixAPI.",
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
