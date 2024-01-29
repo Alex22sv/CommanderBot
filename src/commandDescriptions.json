@@ -7,6 +7,7 @@
     "dynip": "Get the Dinamic IP (DynIP) of your server.",
     "execute": "Execute a Minecraft command on your server.",
     "file": "Get the content of text files on your server.",
+    "get-credit-pools": "List credit pools.",
     "get-motd": "Get your server MOTD.",
     "get-ram": "Check the amount of RAM assigned to your server.",
     "help": "Display the list of commands or get information about a single command.",

@@ -7,6 +7,7 @@
     "dynip": "/dynip",
     "execute": "/execute <server name|ID|address> <Minecraft command>",
     "file": "/file <server name|ID|address> <file name>",
+    "get-credit-pools": "/get-credit-pools",
     "get-ram": "/get-ram <server name|ID|address>",
     "get-motd": "/get-motd <server name|ID|address>",
     "help": "/help [<command>]",
